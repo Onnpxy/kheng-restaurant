@@ -1,0 +1,104 @@
+body {
+    background-color: #F4ECE1;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+#logo {
+    margin-top: 2%;
+}
+
+
+/* container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 59%;
+    margin: 10% auto;
+}
+
+label {
+    font-size: 1.3125em;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    font-size: 1em;
+    border-radius: 1em;
+    text-align: center;
+    box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2);
+    padding: 2% 2%;
+    margin: 0 2% 15% 2%;
+}
+
+input:focus {
+    outline-width: 0em;
+}
+
+.form-group {
+    display: inline;
+}
+
+#uname {
+    margin: 0 2%;
+}
+
+
+/* button */
+
+button {
+    cursor: pointer;
+    padding: 2.5% 4%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.125em;
+    margin: 0.25em 0.125em;
+    width: 23%;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: bold;
+    border-radius: 1.875em;
+    border: none;
+    outline: none;
+    box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.signin {
+    background-color: #271803;
+    color: #F4ECE1;
+    margin-bottom: 2.1875em;
+    margin-right: 1.25em;
+}
+
+.login {
+    background-color: #F26D3D;
+    color: #F4ECE1;
+}
+
+a {
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: bold;
+    color: #271803;
+    font-size: 1.125em;
+}
+
+
+/* footer */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25em;
+}

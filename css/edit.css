@@ -1,0 +1,156 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: #F4ECE1;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    overflow-x: hidden;
+}
+
+#logo {
+    margin-left: 35vh;
+    margin-top: 5vh;
+    width: 30vw;
+}
+
+
+/* ้heading */
+
+.heading {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+/* confirm button */
+
+.confirm {
+    cursor: pointer;
+    padding: 1% 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.35em;
+    margin: 2.25em 0.125em;
+    width: 12%;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-weight: bold;
+    border-radius: 1.875em;
+    border: none;
+    outline: none;
+    box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2);
+    background-color: #271803;
+    color: #F4ECE1;
+    margin-bottom: 2.1875em;
+    margin-right: 1.25em;
+}
+
+
+/* footer */
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 110%;
+    height: 6%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25em;
+    margin-left: -6%;
+}
+table { 
+    border-spacing: 15px; 
+  }
+
+.btn {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(140, 3, 3, 1);
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2);
+    transition-duration: 0.4s;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 4% 13%;
+    margin-left: -2em;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgba(140, 3, 3, 1);
+}
+.fas {
+    margin-right: 2%;
+}
+
+/* card */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.625em;
+    background-color: #D9D5A0;
+    display: flex;
+    justify-content: left;
+    font-size: 1.35em;
+    color: #733907;
+    font-weight: bold;
+    width: 40%;
+    height: 18.75em;
+    max-height: 18.75em;
+    overflow-y: auto;
+}
+
+
+/* table */
+
+td {
+    width: 2em;
+    text-align: center;
+    padding: 3% 2%;
+}
+
+
+/* add or remove button */
+
+.addRemove {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width: 1.5em;
+    height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    /* box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2); */
+    background-color: #733907;
+    color: #F4ECE1;
+}
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #a58971;
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #4e4035;
+}

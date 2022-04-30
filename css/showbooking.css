@@ -1,0 +1,143 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+html,body {
+  background-color: #F4ECE1;
+}
+footer {
+  font-size: small;
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+.logo1 {
+  margin-top: 10vh;
+}
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 2.4vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+#column {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.7vh;
+  margin-top: 3vh;
+}
+#rcorners1 {
+  border-radius: 10px;
+  background: #D9D5A0;
+  padding: 2% 8% 1%;
+  margin-left: -10%;
+  box-shadow: 0px 20px 32px -8px rgba(0, 0, 0, 0.2);
+}
+td {
+  padding: 1%;
+}
+#fix {
+  box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 84px;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 0.9vw;
+  padding-bottom: 0.9vw;
+}
+#confirm {
+  box-shadow: 0px 20px 32px rgba(0, 0, 0, 0.2);
+  border-radius: 84px;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 0.9vw;
+  padding-bottom: 0.9vw;
+}
+.btn1 {
+  transition-duration: 0.4s;
+  background-color: #2F2F2F;
+}
+.btn2 {
+  transition-duration: 0.4s;
+  background-color: #F26D3D;
+}
+.btn1:hover {
+  background-color: #414141;
+}
+.btn2:hover {
+  background-color: #f58962;
+}
+footer {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  width: 100%;
+  height: 6%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25em;
+  clear: both;
+  position: relative;
+  z-index: 1;
+  margin-top: 11%;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a58971;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4e4035;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1em 3%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.7em;
+  width: 20%;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-weight: bold;
+  border-radius: 1.875em;
+  border: none;
+  outline: none;
+  box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, 0.2);
+  transition-duration: 0.4s;
+  background-color: white;
+  color: red !important;
+  display: block;
+  margin-top: 15%;
+  margin-right: 2%;
+  
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: ghostwhite;
+}
