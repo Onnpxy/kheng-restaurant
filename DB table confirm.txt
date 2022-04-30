@@ -1,0 +1,14 @@
+CREATE TABLE confirm(
+   id INT(11) AUTO_INCREMENT,
+   date DATE NOT NULL,
+   time VARCHAR(255) NOT NULL,
+   person INT(11) NOT NULL,
+   tablee INT(11) NOT NULL,
+   food_id INT(11) NOT NULL,
+   user_id INT(11) NOT NULL,
+   food_name VARCHAR(255) NOT NULL,
+   food_quantity INT(11) NOT NULL,
+   food_price INT(11) NOT NULL,
+   firstname VARCHAR(255) NOT NULL,
+   lastname VARCHAR(255) NOT NULL,
+   primary key ( id ));
