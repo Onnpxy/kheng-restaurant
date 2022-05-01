@@ -48,13 +48,13 @@
                 <div class="position-absolute" style="top: 300px; right: 9%;"><i onclick="arrow(1)" class="material-icons">arrow_forward_ios</i></div>
                 <!-- arrow -->
                 <div class="container" id="promotepic1">
-                    <img src="promote1.png">
+                    <img src="img/promote1.png">
                 </div>
                 <div class="container" id="promotepic2">
-                    <img src="promote2.png">
+                    <img src="img/promote2.png">
                 </div>
                 <div class="container" id="promotepic3">
-                    <img src="promote3.png">
+                    <img src="img/promote3.png">
                 </div>
             </div>
 
