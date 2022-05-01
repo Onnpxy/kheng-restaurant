@@ -45,35 +45,35 @@
                 ?>
 
                     <div class="col-xs-3" style="margin-left: 29%;">
-                        <img src="date.png" alt="" height="30vh" style="margin-bottom: 1%;">
+                        <img src="img/date.png" alt="" height="30vh" style="margin-bottom: 1%;">
                         <b style="color: #733907;padding-left: 3%;" name="date"><?php echo $date ?></b>
 
                         <input type="hidden" name="date" value="$date">
                     </div>
 
                     <div class="col-xs-3" style="margin-left: -15%;">
-                        <img src="clock.png" alt="" height="30vh" style="margin-bottom: 1%;">
+                        <img src="img/clock.png" alt="" height="30vh" style="margin-bottom: 1%;">
                         <b style="color: #733907;padding-left: 3%;" name="time"><?php echo $time ?><span style="font-family: 'IBM Plex Sans Thai', sans-serif; color: black;"> น.</span></b>
 
                         <input type="hidden" name="time" value="$time">
                     </div>
 
                     <div class="col-xs-2" style="margin-left: -16%;">
-                        <img src="people.png" alt="" height="30vh" style="margin-bottom: 1%;">
+                        <img src="img/people.png" alt="" height="30vh" style="margin-bottom: 1%;">
                         <b style="color: #733907;padding-left: 7%;" name="person"><?php echo $person ?></b>
 
                         <input type="hidden" name="person" value="$person">
                     </div>
 
                     <div class="col-xs-2" style="margin-left: -10%;">
-                        <img src="table.png" alt="" height="32vh" style="margin-bottom: 1%;">
+                        <img src="img/table.png" alt="" height="32vh" style="margin-bottom: 1%;">
                         <b style="color: #733907;padding-left: 7%;" name="table"><?php echo $table ?></b>
 
                         <input type="hidden" name="table" value="$table">
                     </div>
 
                     <div class="col-xs-2" style="margin-left: -10%;">
-                        <img src="name.png" alt="" height="30vh" style="margin-bottom: 1%;">
+                        <img src="img/name.png" alt="" height="30vh" style="margin-bottom: 1%;">
                         <b style="color: #733907;padding-left: 5%;font-family: 'IBM Plex Sans Thai', sans-serif;"><?php echo $firstname ?> <?php echo $lastname ?></b>
 
                         <?php
@@ -139,7 +139,7 @@
                             
 
                         </div>
-                        </div>
+                </div>
                 <div class="container" style="margin-bottom: 4%;">
                     <button type="submit" id="confirm" class="btn btn-lg btn2" name="confirm" ><b style="color: #F4ECE1;font-size: 90%;">ยืนยันการจองโต๊ะและอาหาร</b></button>
                 </div>
@@ -166,7 +166,7 @@
             $food_quantity = $_POST['food_quantity'];
             $food_price = $_POST['food_price'];
             
-            echo "<script>window.location.href='payment.php';</script>";
+            // echo "<script>window.location.href='payment.php';</script>";
 
 
         }
@@ -187,11 +187,11 @@
 
 
         if ($conn->query(substr($confirm, 0, strlen($confirm) - 1) . ";") === TRUE) {
-            echo "<script>alert('ยืนยันการจองเรียบร้อยแล้ว')</script>";
+            echo "<script>alert('ยืนยันการจองเรียบร้อยแล้ว'); window.location.href='payment.php';</script>";
             // header("location: payment.php");
         } else {
             // echo "Error: " . $confirm . "<br>" . $conn->error;
-            echo "<script>alert('การจองผิดพลาด กรุณาออกจากระบบและจองใหม่อีกครั้ง')</script>";
+            echo "<script>alert('การจองผิดพลาด กรุณาลองใหม่อีกครั้ง'); window.location.href='payment.php';</script>";
         }
 
     ?>
