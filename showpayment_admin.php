@@ -19,7 +19,7 @@
 
 <body>
     <div class="logo1">
-        <img src="kheng.png" alt="logo" height="120vh" class="center">
+        <img src="img/kheng.png" alt="logo" height="120vh" class="center">
     </div>
     <h3><b>หลักฐานการชำระเงิน</b></h3>
 
@@ -133,7 +133,7 @@
 
     <div class="container">
         <button type="button" id="back" class="btn btn-lg btn2">
-            <img src="Arrow.png" alt="" width="18%" style="margin-left: -10%;margin-right: 5%;">
+            <img src="img/Arrow.png" alt="" width="18%" style="margin-left: -10%;margin-right: 5%;">
             <b style="color: #F4ECE1;font-size: 95%;" onclick="location.href='showtable_admin.php'">กลับสู่หน้าแสดงโต๊ะ</b></button>
     </div>
 
