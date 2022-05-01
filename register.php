@@ -96,21 +96,30 @@
                 $username = $_POST['username'];
                 $pass = $_POST['pass'];
 
+                $check_duplicate_username = "SELECT username FROM users WHERE username = '$username' ";
 
+                $result = mysqli_query($conn, $check_duplicate_username);
+                $count = mysqli_num_rows($result);
 
-                $query = "INSERT INTO users(firstname, lastname, phone, email, username, pass) VALUES('".$firstname."', '".$lastname."', '".$phone."', '".$email."', '".$username."', '".$pass."')";
-                // echo $query;
-                $result = mysqli_query($conn, $query);
-                
-
-                if ($result) { 
-                    echo "<script>alert('You have successfully register')";
-
-                    header("location: login.php");
-                } else {
-                    echo "<script>alert('Failed to register')</script>";
+                if ($count > 0) {
+                    echo "<script>alert('username มีคนใช้แล้ว กรุณาใส่ username อื่น')</script>";
+                    return false;
                 }
+                else {
+                    $query = "INSERT INTO users(firstname, lastname, phone, email, username, pass) VALUES('".$firstname."', '".$lastname."', '".$phone."', '".$email."', '".$username."', '".$pass."')";
+                    // echo $query;
+                    $result = mysqli_query($conn, $query);
+                    
+
+                    if ($result) { 
+                        echo "<script>alert('สมัครสมาชิกเรียบร้อยแล้ว')";
+
+                        header("location: login.php");
+                    } else {
+                        echo "<script>alert('เกิดข้อผิดพลาด กรุณาลองสมัครใหม่อีกครั้ง')</script>";
+                    }
             }
+        }
 
         ?>
 
@@ -119,6 +128,7 @@
     <footer>
         © copyright2022 Kheng Chinese Restaurant
     </footer>
+
 </body>
 
 </html>
