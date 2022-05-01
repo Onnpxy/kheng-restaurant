@@ -24,6 +24,7 @@
         <div class="row">
 
             <?php
+                error_reporting(0);
                 session_start();
                 include('config.php');
                 if (!isset($_SESSION['user'])) {
@@ -44,28 +45,28 @@
 
                             
             <div class='col-xs-3' style='margin-left: 29%;'>
-                <img src='date.png' height='30vh' style='margin-bottom: 1%;'>
+                <img src='img/date.png' height='30vh' style='margin-bottom: 1%;'>
                 <b style='color: #733907;padding-left: 3%;'><?php echo $date ?></b>
             </div>
 
             <div class='col-xs-3' style='margin-left: -15%;'>
-                <img src='clock.png' height='30vh' style='margin-bottom: 1%;'>
+                <img src='img/clock.png' height='30vh' style='margin-bottom: 1%;'>
                 <b style='color: #733907;padding-left: 3%;'><?php echo $time ?><span style='font-family: 'IBM Plex Sans Thai', sans-serif; color: black;'> น.</span></b>
             </div>
 
         <div class='col-xs-2' style='margin-left: -16%;'>
-            <img src='people.png' height='30vh' style='margin-bottom: 1%;'>
+            <img src='img/people.png' height='30vh' style='margin-bottom: 1%;'>
             <b style='color: #733907;padding-left: 7%;'><?php echo $person ?></b>
         </div>
 
         <div class='col-xs-2' style='margin-left: -10%;'>
-            <img src='table.png' height='32vh' style='margin-bottom: 1%;'>
+            <img src='img/table.png' height='32vh' style='margin-bottom: 1%;'>
             <b style='color: #733907;padding-left: 7%;'><?php echo $table ?></b>
         </div>
                             
 
         <div class="col-xs-2" style="margin-left: -10%;">
-            <img src="name.png" alt="" height="30vh" style="margin-bottom: 1%;">
+            <img src="img/name.png" alt="" height="30vh" style="margin-bottom: 1%;">
             <b style="color: #733907;padding-left: 5%;font-family: 'IBM Plex Sans Thai', sans-serif;"><?php echo $firstname ?> <?php echo $lastname ?></b>
         </div>
 
