@@ -35,11 +35,9 @@
                         <?php
                             session_start();
                             include('config.php');
-
                             if (!isset($_SESSION['user'])) {
                                 header("location: login.php");
                             }
-                            
                             $user_id = $_SESSION['user'];
 
 
@@ -181,13 +179,12 @@
 
                 <?php
                     $_SESSION['total'] = $total;
-
                 ?>
 
                 </div> 
 
             </div>
-            
+
             <div class="container" style="margin-bottom: 5%;">
                 <div class="bottom">
                     <div class="row">
