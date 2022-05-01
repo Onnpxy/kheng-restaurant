@@ -23,7 +23,7 @@
     </div>
 
     <h3><b>แสดงหมายเลขโต๊ะ</b></h3>
-    <form class="select" method="post">
+    <form class="select" method="POST">
         <label for="date" class="thai1"><b style="font-size: large;">วันที่</b></label>
         <input type="date" id="day" name="date" min="2022-05-01" max="2023-12-31" required>
 
@@ -69,15 +69,11 @@
                         $time = $_POST['time'];
 
 
-                        $select = mysqli_query($conn, "SELECT * FROM confirm WHERE date = '".$date."' AND time = '".$time."' GROUP BY firstname");
+                        $select = mysqli_query($conn, "SELECT * FROM confirm WHERE date = '$date' AND time = '$time' GROUP BY 'firstname'");
 
                         if (mysqli_num_rows($select) > 0 ) {
-                            $row = mysqli_fetch_assoc($select);
 
                             while($row = $select->fetch_assoc()) {
-                                $firstname = $row['firstname'];
-                                $lastname = $row['lastname'];
-                                $table = $row['tablee'];
 
                                 echo "
                                     <tr>
@@ -86,6 +82,7 @@
                                         <td id='tdtable'>โต๊ะที่ ".$row['tablee']."</td>
                                     </tr>
                                 ";
+
                             }
                             } else {
                             echo "ยังไม่มีการจอง";
@@ -102,7 +99,7 @@
         <div class="row">
             <div class="col-xs-6">
                 <button type="button" id="return" class="btn btn-lg btn1">
-                    <img src="Arrow.png" alt="" width="15%" style="margin-left: -10%;margin-right: 5%;">
+                    <img src="img/Arrow.png" alt="" width="15%" style="margin-left: -10%;margin-right: 5%;">
 
                     <b style="color: #F4ECE1;font-size: 90%;" onclick="location.href='showfood_admin.php'">ไปหน้าแสดงรายการอาหาร</b></button>
             </div>
@@ -110,7 +107,7 @@
                 <button type="button" id="message" class="btn btn-lg btn2">
                     <b style="color: #F4ECE1;font-size: 90%;" onclick="location.href='showpayment_admin.php'">ไปหน้าแสดงหลักฐานการชำระเงิน</b>
                     
-                    <img src="Arrow.png" alt="" width="15%" style="margin-left: 3%;transform: rotate(180deg);">
+                    <img src="img/Arrow.png" alt="" width="15%" style="margin-left: 3%;transform: rotate(180deg);">
                 </button>
             </div>
 
