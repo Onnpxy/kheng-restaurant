@@ -89,16 +89,15 @@
                
             <div class="container">
                 <div class="bottom">
+
+                <center>
                     <div class="row">
-                            
                         <div class="col">
-                            <button type="button" class="btn btn-primary" id="back" onclick="location.href='register.php'">ย้อนกลับ</button>
+                                <button type="button" class="btn btn-primary" id="check" name="check-cart" onclick="location.href='check_order.php'">เช็คอาหารในเข่ง</button>
                         </div>
-                        <div class="col">
-                            <button type="button" class="btn btn-primary" id="check" name="check-cart" onclick="location.href='check_order.php'">เช็คอาหารในเข่ง</button>
-                        </div>
-                        
                     </div>
+                </center>
+
                     <center><a href="logout.php">ออกจากระบบ</a></center>
                 </div>
         </div>
@@ -125,7 +124,7 @@
 
                         if(in_array($_POST['food_name'], $myitems))
                         {
-                            echo "<script>alert('Item Already Added')</script>";
+                            echo "<script>alert('อาหารรายการนี้ถูกเพิ่มไปเรียบร้อยแล้ว')</script>";
                         }
                         else
                         {
@@ -147,7 +146,7 @@
                                 'food_price' => $_POST['food_price'],
                                 'food_quantity' => $_POST['food_quantity']
                             );
-                            // echo "<script>alert('Item Added')</script>";
+                            echo "<script>alert('เพิ่มลงเข่งเรียบร้อยแล้ว')</script>";
                             // print_r($_SESSION['cart']);
                         }
                     }
