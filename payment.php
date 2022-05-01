@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row" width="100%">
                 <div class="col">
-                    <img src="qrcode.png" style="margin-top: 10%;border-radius: 10%;">
+                    <img src="img/qrcode.png" style="margin-top: 10%;border-radius: 10%;">
                 </div>
                 <div class="col">
                     <div class="heading">
@@ -45,8 +45,10 @@
                     </div>
 
                     <?php
+                        error_reporting(0);
                         session_start();
                         include('config.php');
+                        
                         if (!isset($_SESSION['user'])) {
                             header('location: login.php');
                         }
@@ -92,16 +94,15 @@
                                     <a href="logout.php">ออกจากระบบ</a>
                                 </div>
                             </div>
-
                         </form>
                 </div>
             </div>
         </div>
 
 
-    <footer>
-        <p>© copyright2022 Kheng Chinese Restaurant</p>
-    </footer>
+    <!-- <footer>
+        © copyright2022 Kheng Chinese Restaurant
+    </footer> -->
 
     <script>
         // slide
@@ -150,8 +151,28 @@
 
     ?>
     
+    <?php
+        // $query_img = "SELECT * FROM image";
+        // $query_run = mysqli_query($conn, $query_img);
 
+        // if ($query_run) {
+        //     while ($row = mysqli_fetch_array($query_run))
+        //     $image = $row['filename'];
+        //     {
+        ?>
+            <!-- <tr>
+                <td>
+                    <img src=" " width="600" height="450">
+                </td>
+            </tr> -->
+        <?php
+        //     }
+        // }
+    ?>
 
+<footer>
+        © copyright2022 Kheng Chinese Restaurant
+    </footer>
 </body>
 
 </html>
