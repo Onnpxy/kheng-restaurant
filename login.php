@@ -95,6 +95,7 @@
                             echo "<script>alert('You have successfully login')</script>";
                             header('location: showfood_admin.php');
                         }
+
                         else if ($row['user_type'] == 'user')
                         {
                             $_SESSION['user'] = trim($row['id']);
@@ -103,11 +104,9 @@
                             /////////////////////////////////////////
                             $_SESSION['firstname'] = $row['firstname'];
                             $_SESSION['lastname'] = $row['lastname'];
-
                             ////////////////////////////////////////
 
-                            echo "<script>alert('You have successfully login')</script>";
-                            header('location: booktable.php');
+                            echo "<script>alert('เข้าสู่ระบบเรียบร้อยแล้ว'); window.location.href='booktable.php';</script>";
 
                         }
                     }
