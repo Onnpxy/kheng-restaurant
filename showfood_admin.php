@@ -64,6 +64,7 @@
             </colgroup>
             <?php
                 include('config.php');
+
                 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
                     if (isset($_POST['search'])) {
@@ -76,7 +77,6 @@
                         $select = mysqli_query($conn, "SELECT * FROM confirm WHERE date = '".$date."' AND time = '".$time."'");
 
                         if (mysqli_num_rows($select) > 0 ) {
-                            $row = mysqli_fetch_assoc($select);
 
                             while($row = $select->fetch_assoc()) {
                                 echo "
@@ -105,18 +105,17 @@
             echo "
                 <div class='container'>
                     <button type='button' id='back' class='btn btn-lg btn2'>
-                        <img src='Arrow.png' alt='' width='18%' style='margin-left: -10%;margin-right: 5%;'>
-                        <b style='color: #F4ECE1;font-size: 95%;' '>กลับสู่หน้าแสดงโต๊ะ</b></button>
+                        <img src='img/Arrow.png' alt='' width='18%' style='margin-left: -10%;margin-right: 5%;'>
+                        <a href='showtable_admin.php'><b style='color: #F4ECE1;font-size: 95%;'>กลับสู่หน้าแสดงโต๊ะ</b></a></button>
                 </div>
             ";
-
         }
 
     ?>
     
     
     <div class="logout1">
-        <a href="logout.php">ออกจากระบบ</a>
+        <a href="logout.php" class="logout2">ออกจากระบบ</a>
     </div>
 
 </body>
